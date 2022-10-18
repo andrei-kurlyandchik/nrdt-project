@@ -31,6 +31,9 @@ body {
   transition: background 0.6s cubic-bezier(0.87, 0, 0.13, 1) 0s;
   z-index: 10;
 }
+.header.header-gray {
+  background-color: #2d3741;
+}
 .header:hover {
   background-color: #05569D;
 }
@@ -118,6 +121,10 @@ body {
 .main {
   height: 100%;
   flex: 1;
+}
+
+.main-m-t {
+  margin-top: 56px;
 }
 
 .header-wrapper__menu {
@@ -364,9 +371,10 @@ body {
 
 .contacts-wrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 .contacts-content {
@@ -411,6 +419,10 @@ body {
 .contacts-block__mail a {
   text-decoration: none;
   color: #05569D;
+}
+
+.contacts-map {
+  width: 50%;
 }
 
 .main-unit {
@@ -705,6 +717,10 @@ body {
   }
   .swiper-slide__des {
     font-size: 20px;
+  }
+  .contacts-map {
+    width: 100%;
+    margin-top: 40px;
   }
 }
 
