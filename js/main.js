@@ -42,6 +42,7 @@ function onScroll() {
 let swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
+    speed: 1500,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
