@@ -48,3 +48,5 @@ let swiper = new Swiper(".mySwiper", {
         disableOnInteraction: false,
     }
 });
+
+AOS.init();

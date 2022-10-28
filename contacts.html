@@ -6,136 +6,152 @@
     <title>Title</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
     <link href="style/reset.css" type="text/css" rel="stylesheet">
     <link href="style/swiper-bundle.min.css" type="text/css" rel="stylesheet">
+    <link href="style/aos.css" type="text/css" rel="stylesheet">
     <link href="style/style.css" type="text/css" rel="stylesheet">
 </head>
 <header class="header header-ous header-bg">
-  <div class="container">
-    <div class="header-wrapper">
-      <div class="header-wrapper__logo">
-          <a href="index.html" class="header-wrapper__logo--bg"></a>
-      </div>
-      <div class="header-wrapper__menu header-wrapper__menu-desktop">
-        <ul class="menu-desktop">
-          <li class="menu-desktop__list">
-            <a href="#" class="menu-desktop__link">О компании</a>
-          </li>
-          <li class="menu-desktop__list">
-            <a href="#" class="menu-desktop__link">Оборудование и технологии</a>
-            <!--                        <div class="menu-desktop__content">-->
-            <!--                            <a href="#" class="menu-desktop__content&#45;&#45;link">-->
-            <!--                                Оборудование закачивания-->
-            <!--                            </a>-->
-            <!--                            <a href="#" class="menu-desktop__content&#45;&#45;link">-->
-            <!--                                Оборудование буровое-->
-            <!--                            </a>-->
-            <!--                        </div>-->
-          </li>
-          <li class="menu-desktop__list">
-            <a href="#" class="menu-desktop__link">Производство</a>
-          </li>
-          <li class="menu-desktop__list">
-            <a href="contacts.html" class="menu-desktop__link">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="menu-mobile-btn">
-        <div class="btn-menu">
-          <span></span>
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="header-wrapper__logo">
+                <a href="index.html" class="header-wrapper__logo--bg"></a>
+            </div>
+            <div class="header-wrapper__menu header-wrapper__menu-desktop">
+                <ul class="menu-desktop">
+                    <li class="menu-desktop__list">
+                        <a href="company.html" class="menu-desktop__link">О компании</a>
+                    </li>
+                    <li class="menu-desktop__list">
+                        <a href="equipment.html" class="menu-desktop__link">Оборудование и технологии</a>
+                        <!--                        <div class="menu-desktop__content">-->
+                        <!--                            <a href="#" class="menu-desktop__content&#45;&#45;link">-->
+                        <!--                                Оборудование закачивания-->
+                        <!--                            </a>-->
+                        <!--                            <a href="#" class="menu-desktop__content&#45;&#45;link">-->
+                        <!--                                Оборудование буровое-->
+                        <!--                            </a>-->
+                        <!--                        </div>-->
+                    </li>
+                    <li class="menu-desktop__list">
+                        <a href="production.html" class="menu-desktop__link">Производство</a>
+                    </li>
+                    <li class="menu-desktop__list">
+                        <a href="contacts.html" class="menu-desktop__link active">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-mobile-btn">
+                <div class="btn-menu">
+                    <span></span>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </header>
 <main class="main main-m-t">
-    <div class="container">
-        <div class="contacts-wrapper">
-            <div class="block-left">
-                <div class="block-left__img">
-                    <img src="img/contact.jpg" alt="contact">
+    <div class="contacts-wrapper">
+        <div class="contacts-block">
+            <div class="contacts-block__img">
+                <img src="img/contact.png" alt="contact-image">
+            </div>
+            <div class="contacts-block__content" data-aos="zoom-in">
+                <div class="contacts-block__content--title">Контакты</div>
+                <div class="contacts-block__content--text">Свяжитесь с нами, чтобы сделать ваши операции более
+                    эффективными и безопасными.
                 </div>
-                <div class="block-left__content">
-                    <div class="block-left__content--title">Контакты</div>
-                    <div class="block-left__content--text">Свяжитесь с нами, чтобы сделать ваши операции более эффективными и безопасными.</div>
-                    <div class="block-left__content--info">
-                        <div class="block-left__content--address">123060 г.Москва, а/я №2</div>
-                        <div class="block-left__content--tel">
-                            тел.: <a href="tel:84955870474"><b>+7 495 587 04 74</b></a>
-                        </div>
-                        <div class="block-left__content--mail">
-                            e-mail: <a href="mailto:office@nrdt.ru"><b>office@nrdt.ru</b></a>
-                        </div>
+                <div class="contacts-block__content--info">
+                    <div class="contacts-block__address">123060 г.Москва, а/я №2</div>
+                    <div class="contacts-block__tel">
+                        тел.: <a href="tel:84955870474"><b>+7 495 587 04 74</b></a>
+                    </div>
+                    <div class="contacts-block__mail">
+                        e-mail: <a href="mailto:office@nrdt.ru"><b>office@nrdt.ru</b></a>
                     </div>
                 </div>
             </div>
-<!--            <div class="contacts-content">-->
-<!--                <div class="contacts-title">Москва</div>-->
-<!--                <div class="contacts-block">-->
-<!--                    <div class="contacts-block__address">123060 г.Москва, а/я №2</div>-->
-<!--                    <div class="contacts-block__tel">-->
-<!--                        тел.: <a href="tel:84955870474"><b>+7 495 587 04 74</b></a>-->
-<!--                    </div>-->
-<!--                    <div class="contacts-block__mail">-->
-<!--                        e-mail: <a href="mailto:office@nrdt.ru"><b>office@nrdt.ru</b></a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-            <div class="contacts-map">
-              <a href="https://yandex.ru/maps/?um=constructor%3Af9323caeaba16c0a6271a339e823dd1eea1ca194d60be6c074cbb18277084830&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Af9323caeaba16c0a6271a339e823dd1eea1ca194d60be6c074cbb18277084830&amp;width=600&amp;height=400&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
-            </div>
+        </div>
+        <!--            <div class="contacts-content">-->
+        <!--                <div class="contacts-title">Москва</div>-->
+        <!--                <div class="contacts-block">-->
+        <!--                    <div class="contacts-block__address">123060 г.Москва, а/я №2</div>-->
+        <!--                    <div class="contacts-block__tel">-->
+        <!--                        тел.: <a href="tel:84955870474"><b>+7 495 587 04 74</b></a>-->
+        <!--                    </div>-->
+        <!--                    <div class="contacts-block__mail">-->
+        <!--                        e-mail: <a href="mailto:office@nrdt.ru"><b>office@nrdt.ru</b></a>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <div class="contacts-map">
+            <a href="https://yandex.ru/maps/?um=constructor%3Af9323caeaba16c0a6271a339e823dd1eea1ca194d60be6c074cbb18277084830&amp;source=constructorStatic"
+               target="_blank">
+                <img src="img/map.jpg" alt="map-image">
+            </a>
         </div>
     </div>
 </main>
 <footer class="footer">
-  <div class="container">
-    <div class="footer-wrapper">
-      <div class="footer-wrapper__logo">
-          <a href="index.html">
-              <img src="img/logo.svg" alt="logo">
-          </a>
-      </div>
-      <div class="footer-wrapper__menu">
-        <a href="#" class="footer-wrapper__menu--link">Оборудование и технологии</a>
-        <a href="#" class="footer-wrapper__menu--link">О компании</a>
-        <a href="#" class="footer-wrapper__menu--link">Контакты</a>
-      </div>
-      <div class="footer-wrapper__content">
-        <div class="footer-wrapper__content--text">г. Москва, ул. Маршала Рыбалко,<br> д.2, корп.6, офис 909. <br> 123060</div>
-        <div class="footer-wrapper__content--text"><a href="tel:84955870474">тел.: +7 495 587 04 74</a></div>
-        <div class="footer-wrapper__content--text"><a href="mailto:office@nrdt.ru">e-mail: office@nrdt.ru</a></div>
-      </div>
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="footer-wrapper__logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <!--            <div class="footer-wrapper__menu">-->
+            <!--                <a href="#" class="footer-wrapper__menu&#45;&#45;link">Оборудование и технологии</a>-->
+            <!--                <a href="#" class="footer-wrapper__menu&#45;&#45;link">О компании</a>-->
+            <!--                <a href="#" class="footer-wrapper__menu&#45;&#45;link">Контакты</a>-->
+            <!--            </div>-->
+            <div class="footer-wrapper__content">
+                <div class="footer-wrapper__content--left">
+                    <div class="footer-wrapper__content--title">Мы находимся:</div>
+                    <div class="footer-wrapper__content--text">г. Москва, ул. Маршала Рыбалко,<br> д.2, корп.6, офис
+                        909. <br> 123060
+                    </div>
+                </div>
+                <div class="footer-wrapper__content--right">
+                    <div class="footer-wrapper__content--title">Связаться с нами:</div>
+                    <div class="footer-wrapper__content--text"><a href="tel:84955870474">тел.: +7 495 587 04 74</a>
+                    </div>
+                    <div class="footer-wrapper__content--text"><a href="mailto:office@nrdt.ru">e-mail:
+                        office@nrdt.ru</a></div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="footer-copyright">
-    © 2022 NORDTECHNO | All Rights Reserved
-  </div>
+    <div class="footer-copyright">
+        © 2022 NORDTECHNO | All Rights Reserved
+    </div>
 </footer>
 <div class="menu-mobile">
-  <div class="menu-mobile__list">
-    <a hr#ef="" class="menu-mobile__link">О компани</a>
-  </div>
-  <div class="menu-mobile__list">
-    <a href="#" class="menu-mobile__link">Оборудование и технологии</a>
-    <!--        <ul class="menu-mobile__list-item">-->
-    <!--            <li>-->
-    <!--                <a class="menu-mobile__list-link">Оборудование закачивания</a>-->
-    <!--            </li>-->
-    <!--            <li>-->
-    <!--                <a class="menu-mobile__list-link">Оборудование буровое</a>-->
-    <!--            </li>-->
-    <!--        </ul>-->
-  </div>
-  <div class="menu-mobile__list">
-    <a href="#" class="menu-mobile__link">Производство</a>
-  </div>
-  <div class="menu-mobile__list">
-    <a href="#" class="menu-mobile__link">Контакты</a>
-  </div>
+    <div class="menu-mobile__list">
+        <a href="company.html" class="menu-mobile__link">О компани</a>
+    </div>
+    <div class="menu-mobile__list">
+        <a href="equipment.html" class="menu-mobile__link">Оборудование и технологии</a>
+        <!--        <ul class="menu-mobile__list-item">-->
+        <!--            <li>-->
+        <!--                <a class="menu-mobile__list-link">Оборудование закачивания</a>-->
+        <!--            </li>-->
+        <!--            <li>-->
+        <!--                <a class="menu-mobile__list-link">Оборудование буровое</a>-->
+        <!--            </li>-->
+        <!--        </ul>-->
+    </div>
+    <div class="menu-mobile__list">
+        <a href="production.html" class="menu-mobile__link">Производство</a>
+    </div>
+    <div class="menu-mobile__list">
+        <a href="contacts.html" class="menu-mobile__link">Контакты</a>
+    </div>
 </div>
 <script src="js/jquery-3.6.1.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/aos.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
