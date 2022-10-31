@@ -46,7 +46,7 @@ body {
   }
 
   &:hover {
-    background-color: #05569D;
+    background-color: #18275D;
 
     .header-wrapper__logo--bg {
       width: 100%;
@@ -68,7 +68,7 @@ body {
   }
 
   &.header-bg, &.header-ous {
-    background-color: #05569D;
+    background-color: #18275D;
 
     .header-wrapper__logo--bg {
       width: 100%;
@@ -94,7 +94,7 @@ body {
 .footer-copyright {
   text-align: center;
   color: white;
-  background-color: #05569D;
+  background-color: #18275D;
   padding: 17px 14px;
   font-size: 13px;
   font-weight: 300;
@@ -939,7 +939,7 @@ body {
 .company-title {
   max-width: 1208px;
   text-align: center;
-  color: #06569D;
+  color: #18275D;
   font-weight: 400;
   font-size: 30px;
   line-height: 1.4;
@@ -989,6 +989,8 @@ body {
 .product-block--right {
   display: flex;
   justify-content: flex-end;
+  margin-top: 50px;
+  margin-bottom: 20px;
 
   .product-block__content {
     left: 100px;
@@ -1013,7 +1015,7 @@ body {
 }
 
 .product-block__content--wrapper {
-  padding: 40px;
+  padding: 40px 40px 20px;
   background: rgba(238, 238, 238, 0.9);
 }
 
@@ -1029,11 +1031,44 @@ body {
   line-height: 1.4;
   font-weight: 500;
   color: #494949;
+  margin-bottom: 18px;
+}
+
+.product-btn-show {
+  font-size: 18px;
+  line-height: 1.4;
+  text-decoration: none;
+  color: #2DAFE5;
+  display: inline-block;
+  cursor: pointer;
+
+  .show {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  &.active {
+    .show {
+      display: none;
+    }
+
+    .hide {
+      display: block;
+    }
+  }
 }
 
 .product-nomenclature {
   width: 100%;
-  padding: 80px 0 150px 140px;
+  padding: 80px 0 120px 140px;
+  display: none;
+
+  &.active {
+    display: block;
+  }
 
   .product-link-pdf {
     width: 756px;
@@ -1100,9 +1135,14 @@ body {
 
 .product-info {
   width: 100%;
-  display: flex;
+  //display: flex;
   justify-content: flex-end;
   padding: 80px 0;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
 }
 
 .product-info__content {
@@ -1120,6 +1160,39 @@ body {
 .company-footer, .product-footer {
   width: 100%;
   margin-bottom: -4px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.main-partners {
+  background-color: #F5F5F5;
+}
+
+.main-partners__wrapper {
+  padding: 50px 0 130px 0;
+}
+
+.main-partners__title {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 72px;
+  margin-bottom: 80px;
+}
+
+.main-partners__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-partners__img {
+  margin-right: 80px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   img {
     width: 100%;
@@ -1435,5 +1508,31 @@ body {
     left: auto;
     top: auto;
     margin-bottom: 20px;
+  }
+
+  .main-partners__wrapper {
+    padding-bottom: 10px;
+  }
+
+  .main-partners__title {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
+
+  .main-partners__list {
+    flex-flow: column;
+  }
+
+  .main-partners__img {
+    margin-right: 0;
+    margin-bottom: 60px;
+    text-align: center;
+
+    img {
+      width: 70%;
+      margin: 0 auto;
+    }
   }
 }
