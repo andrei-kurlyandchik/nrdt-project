@@ -137,6 +137,31 @@ body {
 
 .footer-wrapper__content--right {
   width: 50%;
+  position: relative;
+}
+
+.footer-wrapper__content--social-network {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  display: flex;
+}
+.footer-wrapper__content--social-network .facebook, .footer-wrapper__content--social-network .youtube, .footer-wrapper__content--social-network .linkedin {
+  width: 30px;
+  height: 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 20px;
+}
+.footer-wrapper__content--social-network .facebook {
+  background-image: url("../img/facebook.svg");
+}
+.footer-wrapper__content--social-network .youtube {
+  background-image: url("../img/youtube.svg");
+}
+.footer-wrapper__content--social-network .linkedin {
+  background-image: url("../img/linkedin.svg");
 }
 
 .footer-wrapper__content--title {
@@ -1242,6 +1267,12 @@ body {
   }
   .product-nomenclature--title {
     font-size: 34px;
+  }
+  .footer-wrapper__content--social-network {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 20px;
   }
 }
 

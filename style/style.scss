@@ -151,6 +151,35 @@ body {
 
 .footer-wrapper__content--right {
   width: 50%;
+  position: relative;
+}
+
+.footer-wrapper__content--social-network {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  display: flex;
+
+  .facebook, .youtube, .linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+  }
+
+  .facebook {
+    background-image: url("../img/facebook.svg");
+  }
+
+  .youtube {
+    background-image: url("../img/youtube.svg");
+  }
+
+  .linkedin {
+    background-image: url("../img/linkedin.svg");
+  }
 }
 
 .footer-wrapper__content--title {
@@ -1399,5 +1428,12 @@ body {
 
   .product-nomenclature--title {
     font-size: 34px;
+  }
+
+  .footer-wrapper__content--social-network {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 20px;
   }
 }
