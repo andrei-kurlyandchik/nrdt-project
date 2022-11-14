@@ -261,6 +261,7 @@ body {
   position: relative;
   padding: 14px 0;
   overflow: hidden;
+  cursor: pointer;
 
   &:after {
     content: '';
@@ -493,8 +494,7 @@ body {
 .contacts-block {
   position: relative;
   width: 100%;
-  padding-bottom: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 115px;
 }
 
 .contacts-block__img {
@@ -508,7 +508,8 @@ body {
 .contacts-block__content {
   position: absolute;
   right: 100px;
-  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
   background: rgba(238, 238, 238, 0.9);
   padding: 40px;
   width: 50%;
@@ -524,7 +525,7 @@ body {
 .contacts-block__content--text {
   font-size: 18px;
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 500;
   color: #494949;
   margin-bottom: 30px;
 }
@@ -532,18 +533,12 @@ body {
 .contacts-block__content--info {
   font-size: 18px;
   line-height: 1.4;
-  font-weight: 600;
-  border-left: 2px solid #2DAFE5;
+  font-weight: 500;
   color: #2DAFE5;
-  padding-left: 30px;
-}
-
-.contacts-block__address {
-  margin-bottom: 10px;
 }
 
 .contacts-block__tel, .contacts-block__mail {
-  margin-bottom: 10px;
+
   a {
     text-decoration: none;
     color: #2DAFE5;
@@ -628,7 +623,7 @@ body {
 }
 
 .main-about-us {
-  padding: 150px 0;
+  padding: 110px 0 60px;
 
   h2 {
     text-transform: uppercase;
@@ -640,7 +635,25 @@ body {
 
 .main-about-us__wrapper {
   display: flex;
-  align-items: center;
+  flex-flow: column;
+}
+
+.main-about-us__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 55px;
+  color: #2DAFE5;
+}
+
+.main-about-us__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: -35px;
+}
+
+.main-about-us__content--img {
+  width: 60%;
 }
 
 .main-about-us__wrapper--img {
@@ -708,6 +721,7 @@ body {
   text-decoration: none;
   color: #2DAFE5;
   display: inline-block;
+  margin-top: 100px;
 
   &:hover {
     color: #05569D;
@@ -921,7 +935,7 @@ body {
 .company-block__content {
   position: absolute;
   right: 100px;
-  bottom: 10%;
+  bottom: -20%;
   background: rgba(238, 238, 238, 0.9);
   padding: 40px;
   width: 50%;
@@ -937,19 +951,29 @@ body {
 .company-block__content--desc {
   font-size: 18px;
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 500;
   color: #494949;
+  margin-bottom: 20px;
+}
+
+.company-block__content--info {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 500;
+  border-left: 2px solid #2DAFE5;
+  color: #2DAFE5;
+  padding-left: 30px;
 }
 
 .company-title {
   max-width: 1208px;
   text-align: center;
-  color: #18275D;
+  color: #2DAFE5;
   font-weight: 400;
   font-size: 30px;
   line-height: 1.4;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 170px 0;
 }
 
 .company-gray {
@@ -968,7 +992,7 @@ body {
 }
 
 .company-info {
-  width: 55%;
+  width: 51%;
 }
 
 .company-info__title {
@@ -986,6 +1010,15 @@ body {
 
   p:first-child {
     margin-bottom: 60px;
+    &.product-p {
+      margin-bottom: 40px;
+    }
+  }
+
+  .border {
+    border-left: 2px solid #2DAFE5;
+    color: #2DAFE5;
+    padding-left: 30px;
   }
 }
 
@@ -1029,9 +1062,10 @@ body {
 
 .product-block__content--title, .product-info__content--title {
   font-weight: 300;
-  font-size: 45px;
+  font-size: 44px;
+  line-height: 1.2;
   color: #2DAFE5;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .product-block__content--text, .product-info__content--text {
@@ -1040,11 +1074,19 @@ body {
   font-weight: 500;
   color: #494949;
   margin-bottom: 18px;
+  margin-right: 22%;
 }
 
 .product-info__content--text {
   p {
     margin-bottom: 20px;
+
+    &.border {
+      border-left: 2px solid #2DAFE5;
+      color: #2DAFE5;
+      padding-left: 30px;
+      margin-bottom: 40px;
+    }
   }
 
   ul {
@@ -1062,6 +1104,10 @@ body {
   margin-bottom: 50px;
   list-style: disc;
   padding-left: 55px;
+
+  &.product-info__content--list-drilling {
+    margin-bottom: 140px;
+  }
 }
 
 .product-btn-show {
@@ -1154,10 +1200,11 @@ body {
   padding-left: 30px;
   margin-top: 40px;
   margin-bottom: 50px;
+  margin-right: 18%;
 }
 
 .product-link-pdf {
-  width: 100%;
+  margin-right: 18%;
   text-decoration: none;
   text-align: center;
   background: #18A0FB;
@@ -1177,9 +1224,9 @@ body {
 .product-info {
   width: 100%;
   //display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 80px 0;
+  padding: 40px 0 60px;
   display: none;
 
   &.active {
@@ -1187,27 +1234,55 @@ body {
   }
 }
 
+.product-info--center {
+  align-items: center;
+
+  .product-info__image {
+    width: 45%;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+
+  .product-info__content {
+    width: 55%;
+    margin-right: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .product-info__img {
-  width: 50%;
+  //width: 30%;
+  //text-align: center;
+  //padding-right: 80px;
+  width: 470px;
   text-align: center;
+  padding-right: 80px;
   img {
-    width: 33%;
+    width: 100%;
+  }
+
+  &--drilling {
+    padding-right: 150px;
   }
 }
 
 .product-info__content {
-  width: 50%;
+  //width: 70%;
+  flex: 1;
+  padding-top: 30px;
   background-color: #fff;
-  margin-right: 100px;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin-right: 20px;
+  padding-left: 120px;
 }
 
 .product-info__content--wrapper {
 
 }
 
-.company-footer, .product-footer {
+.company-footer, .product-footer, .equipment-footer {
   width: 100%;
   margin-bottom: -4px;
 
@@ -1237,7 +1312,7 @@ body {
 }
 
 .main-partners__img {
-  margin-right: 70px;
+  margin-right: 80px;
 
   &:last-child {
     margin-right: 0;
@@ -1253,6 +1328,13 @@ body {
 // @media
 @media all and (min-width: 1800px) {
 
+}
+
+@media all and (max-width: 1240px) {
+  .product-info__img img {
+    width: 100%;
+    max-width: initial;
+  }
 }
 
 @media all and (max-width: 1200px) {
@@ -1479,6 +1561,7 @@ body {
     width: 100%;
     padding: 30px 14px;
     margin-top: -80px;
+    transform: translateY(0);
   }
 
   .product-block__content {
@@ -1523,10 +1606,13 @@ body {
 
   .product-info {
     padding: 40px 0;
+    flex-flow: column;
   }
 
   .product-info__img {
-    display: none;
+    width: 300px;
+    padding-right: 0;
+    margin: 0 auto 20px auto;
   }
 
   .product-info__content {
@@ -1543,12 +1629,17 @@ body {
     }
   }
 
-  .product-nomenclature {
-    padding: 40px 14px;
+  .product-info__content--list.product-info__content--list-drilling {
+    margin-bottom: 50px;
+  }
 
-    .product-link-pdf {
-      width: 100%;
-    }
+  .product-link-pdf {
+    width: 100%;
+    margin: 0;
+  }
+
+  .product-info__content--text, .product-info__content--desc {
+    margin-right: 0;
   }
 
   .product-nomenclature--title {
@@ -1598,5 +1689,35 @@ body {
 
   .product-nomenclature__img {
     display: none;
+  }
+
+  .main-about-us__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .main-about-us__content {
+    margin-top: 0;
+    flex-flow: column;
+  }
+
+  .main-about-us__a {
+    margin-top: 30px;
+  }
+
+  .main-about-us__content--img {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .product-info--center .product-info__image {
+    width: 100%;
+  }
+
+  .product-info--center .product-info__content {
+    width: 100%;
+    margin-right: 0;
+    padding-right: 14px;
+    padding-left: 14px;
   }
 }

@@ -15,15 +15,15 @@ $( ".btn-menu" ).on( "click", function( event ) {
     $('.menu-mobile').toggleClass('menu-mobile--open');
 });
 
-$( "#btn-show-info" ).on( "click", function( event ) {
-    $(this).toggleClass('active');
-    $('.product-info').toggleClass('active');
-});
-
-$( "#btn-show-nomenclature" ).on( "click", function( event ) {
-    $(this).toggleClass('active');
-    $('.product-nomenclature').toggleClass('active');
-});
+// $( "#btn-show-info" ).on( "click", function( event ) {
+//     $(this).toggleClass('active');
+//     $('.product-info').toggleClass('active');
+// });
+//
+// $( "#btn-show-nomenclature" ).on( "click", function( event ) {
+//     $(this).toggleClass('active');
+//     $('.product-nomenclature').toggleClass('active');
+// });
 
 (function() {
     // page scroll bind
