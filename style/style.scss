@@ -523,9 +523,9 @@ body {
 }
 
 .contacts-block__content--text {
-  font-size: 18px;
-  line-height: 1.4;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
   color: #494949;
   margin-bottom: 30px;
 }
@@ -1113,7 +1113,7 @@ body {
   line-height: 1.4;
   font-weight: 500;
   color: #494949;
-  margin-bottom: 50px;
+  margin-bottom: 110px;
   list-style: disc;
   padding-left: 55px;
 
@@ -1278,7 +1278,8 @@ body {
   //padding-right: 80px;
   width: 470px;
   text-align: center;
-  padding-right: 80px;
+  //padding-right: 80px;
+  margin-right: 10%;
   img {
     width: 100%;
   }
@@ -1293,7 +1294,8 @@ body {
   flex: 1;
   padding-top: 100px;
   background-color: #fff;
-  margin-right: 255px;
+  margin-right: 145px;
+  //margin-right: 255px;
   padding-left: 120px;
 }
 
@@ -1356,9 +1358,12 @@ body {
 }
 
 @media all and (max-width: 1240px) {
-  .product-info__img img {
-    width: 100%;
-    max-width: initial;
+  .product-info__img {
+      margin-right: 0;
+     img {
+      width: 100%;
+      max-width: initial;
+    }
   }
 
   .company-info--width {
@@ -1664,7 +1669,7 @@ body {
 
   .product-info__img {
     width: 300px;
-    padding-right: 0;
+    //padding-right: 0;
     margin: 0 auto 20px auto;
   }
 
@@ -1774,5 +1779,9 @@ body {
     padding-right: 14px;
     padding-left: 14px;
     padding-top: 20px;
+  }
+
+  .product-info__content--list {
+    margin-bottom: 50px;
   }
 }
