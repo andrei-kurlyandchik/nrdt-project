@@ -879,12 +879,12 @@ body {
 }
 
 .company-block__content--info {
-  font-size: 18px;
-  line-height: 1.4;
-  font-weight: 500;
   border-left: 2px solid #2DAFE5;
   color: #2DAFE5;
   padding-left: 30px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 .company-title {
@@ -1144,8 +1144,9 @@ body {
 
 .product-info--pad {
   padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: -80px;
+}
+.product-info--pad.product-info--margin {
+  margin-bottom: -200px;
 }
 
 .product-info--center {
@@ -1241,6 +1242,11 @@ body {
   }
   .product-info__content--list.product-info__content--list-drilling {
     margin-bottom: 150px;
+  }
+  .company-block__content--info {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 500;
   }
 }
 @media all and (max-width: 1200px) {
@@ -1457,6 +1463,8 @@ body {
   }
   .product-info.product-info--pad {
     padding-bottom: 0;
+  }
+  .product-info.product-info--pad.product-info--margin {
     margin-bottom: -130px;
   }
   .product-info__img {
