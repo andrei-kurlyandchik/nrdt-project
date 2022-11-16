@@ -1251,6 +1251,11 @@ body {
     line-height: 1.4;
     font-weight: 500;
   }
+  .swiper-slide__title {
+    font-size: 70px;
+    font-weight: 300;
+    margin-bottom: 100px;
+  }
 }
 @media all and (max-width: 1200px) {
   .block-left {

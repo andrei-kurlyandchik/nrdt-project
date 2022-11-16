@@ -952,6 +952,7 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.2;
+
   color: #494949;
   margin-bottom: 20px;
 }
@@ -1384,6 +1385,12 @@ body {
     font-size: 18px;
     line-height: 1.4;
     font-weight: 500;
+  }
+
+  .swiper-slide__title {
+    font-size: 70px;
+    font-weight: 300;
+    margin-bottom: 100px;
   }
 }
 
