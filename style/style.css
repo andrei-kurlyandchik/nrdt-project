@@ -273,6 +273,12 @@ body {
   background-color: #2d3741;
   border-radius: 8px;
 }
+.menu-desktop__content--width {
+  width: 160%;
+}
+.menu-desktop__content--width .menu-desktop__content--link {
+  text-transform: initial;
+}
 
 .menu-desktop__content--link {
   color: #fff;
@@ -428,6 +434,9 @@ body {
   position: relative;
   padding: 14px 10px;
   display: block;
+}
+.menu-mobile__list-link--t {
+  text-transform: initial;
 }
 
 .page-title {

@@ -303,6 +303,14 @@ body {
   z-index: 1;
   background-color: #2d3741;
   border-radius: 8px;
+
+  &--width {
+    width: 160%;
+
+    .menu-desktop__content--link {
+      text-transform: initial;
+    }
+  }
 }
 
 .menu-desktop__content--link {
@@ -465,6 +473,10 @@ body {
   position: relative;
   padding: 14px 10px;
   display: block;
+
+  &--t {
+    text-transform: initial;
+  }
 }
 
 .page-title {
