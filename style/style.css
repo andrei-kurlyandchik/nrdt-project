@@ -290,6 +290,7 @@ body {
   padding: 14px 10px;
   display: block;
   border-bottom: 1px solid #909090;
+  white-space: nowrap;
 }
 .menu-desktop__content--link:last-child {
   border-bottom: none;
@@ -1261,9 +1262,58 @@ body {
     font-weight: 500;
   }
   .swiper-slide__title {
-    font-size: 70px;
+    font-size: 68px;
     font-weight: 300;
     margin-bottom: 100px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .menu-desktop__link {
+    font-size: 14px;
+  }
+  .swiper-slide__des {
+    font-size: 28px;
+  }
+  .company-block__content {
+    bottom: -40%;
+  }
+  .company-block__content--title, .contacts-block__content--title, .product-block__content--title {
+    font-size: 38px;
+  }
+  .company-block__content--desc, .contacts-block__content--text, .product-block__content--text {
+    font-size: 20px;
+  }
+  .company-block__content--info {
+    font-size: 16px;
+  }
+  .company-title {
+    font-size: 28px;
+    padding-bottom: 120px;
+  }
+  .company-info__title {
+    font-size: 38px;
+  }
+  .company-info__content {
+    font-size: 22px;
+  }
+  .company-gray, .company-white {
+    padding: 80px 0;
+  }
+  .product-info__content {
+    padding-top: 80px;
+  }
+  .product-block__content--text, .product-info__content--text {
+    font-size: 22px;
+  }
+  .product-block__content, .contacts-block__content {
+    transform: translateY(-40%);
+  }
+  .product-info--pad {
+    padding-top: 80px;
+  }
+  .product-info--pad.product-info--margin {
+    padding-top: 0;
   }
 }
 @media all and (max-width: 1200px) {
@@ -1288,6 +1338,7 @@ body {
   }
   .menu-desktop__link {
     font-size: 14px;
+    color: white;
   }
   .main-about-us__desc {
     width: 100%;
@@ -1372,12 +1423,12 @@ body {
     transform: translateY(-18px);
   }
   .swiper-slide__title {
-    font-size: 40px;
+    font-size: 38px;
     margin-bottom: 60px;
     padding-left: 0;
   }
   .swiper-slide__des {
-    font-size: 24px;
+    font-size: 22px;
   }
   .swiper-slide__des span {
     width: 28px;
@@ -1550,7 +1601,7 @@ body {
     display: none;
   }
   .main-about-us__title {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 45px;
   }
   .main-about-us__content {
@@ -1558,6 +1609,7 @@ body {
     flex-flow: column;
   }
   .main-about-us__a {
+    font-size: 22px;
     margin-top: 30px;
   }
   .main-about-us__content--img {
