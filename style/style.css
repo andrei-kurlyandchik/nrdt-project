@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   margin: auto;
   min-width: 320px;
@@ -1234,12 +1235,12 @@ body {
   width: 100%;
 }
 
-@media all and (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
   .product-info--center .product-info__image img {
     width: 100%;
   }
 }
-@media all and (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .product-info__img {
     margin-right: 0;
   }
@@ -1319,12 +1320,12 @@ body {
     padding-top: 0;
   }
 }
-@media all and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .block-left {
     margin: 50px 0 50px;
   }
 }
-@media all and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .header {
     height: 56px;
     background-color: #18275D;
@@ -1360,7 +1361,7 @@ body {
     padding-right: 14px;
   }
 }
-@media all and (max-width: 980px) {
+@media only screen and (max-width: 980px) {
   .container {
     padding: 0 14px;
   }
@@ -1632,6 +1633,14 @@ body {
   .product-info__content--list {
     margin-bottom: 50px;
   }
+}
+/* iPads (горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* стили */
+}
+/* iPad 3**********/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* стили */
 }
 
 /*# sourceMappingURL=style.css.map */
