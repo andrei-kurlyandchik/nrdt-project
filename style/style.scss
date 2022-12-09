@@ -1879,10 +1879,14 @@ body {
 
 /* iPads (горизонтальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1030px) and (orientation: landscape) {
-  justify-content: center;
+  .swiper-slide {
+    justify-content: center;
+  }
 }
 
 /* iPad 3**********/
 @media only screen and (min-width: 768px) and (max-width: 1030px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  justify-content: center;
+  .swiper-slide {
+    justify-content: center;
+  }
 }
