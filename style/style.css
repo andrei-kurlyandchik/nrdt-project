@@ -1308,7 +1308,7 @@ body {
     padding-top: 0;
   }
   .product-block__content--text, .product-info__content--text {
-    font-size: 22px;
+    font-size: 20px;
   }
   .product-block__content, .contacts-block__content {
     transform: translateY(-40%);
