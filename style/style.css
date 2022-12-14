@@ -227,6 +227,18 @@ body {
 }
 .menu-desktop__list:hover .menu-desktop__content {
   display: block;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.menu-desktop__list:focus .menu-desktop__content {
+  display: block;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.menu-desktop__list:active .menu-desktop__content {
+  display: block;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .menu-desktop__link {
